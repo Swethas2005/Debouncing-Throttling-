@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>OMDB API</title>
+</head>
+<body>
+    <h1>Movies...</h1>
+    <div id="search-holder">
+        <input type="text" id="movieInput" placeholder="Enter the movie name here...">
+        <button id="btn"  onclick="searchMovie()">🔍</button>
+    </div>
+    <div id="movieContainer">
+        <div id="movieImage"></div>
+        <div id="movieData"></div>
+    </div>
+
+    <div id="autocompleteContainer"></div>
+</body>
+<script src="./debounce.js"></script>
+<script src="./index.js"></script>
+</html>
+
+
+ 
